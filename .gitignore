@@ -1,4 +1,6 @@
 **/__pycache__/
+**/node_modules/
+**/.sass-cache/
 **/migrations/**/__pycache__/
 *.log
 *.pot

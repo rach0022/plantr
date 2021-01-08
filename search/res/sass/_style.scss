@@ -1,0 +1,13 @@
+// This is where we hold all component neutral styles
+
+// For the About component mainly but can be used anywhere
+.rounded-corners {
+  border-radius: 15px;
+}
+
+.center-items {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}

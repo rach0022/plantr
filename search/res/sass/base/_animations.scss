@@ -1,0 +1,139 @@
+// This file will contain all keyframes and classes needed for the sites animations
+// naming convention is keyframe: name, class: animate-name
+
+// Spin Animation, will start an element at 0 degrees and rotate a full turn
+// can be applied with the animate-spin class
+@keyframes spin {
+  from {
+    transform: rotate(0);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+// Animate spin will be done with an ease-out timing function as if there
+// was a bit of drag stopping hte rotation
+.animate-spin {
+  animation: spin 4s ease-out 100ms infinite normal forwards;
+}
+
+.animate-spin-reverse {
+  animation: spin 4s ease-in 100ms infinite reverse forwards;
+}
+
+// when the user hovers with animate-hover-spin the animation will only be run once
+.animate-hover-spin {
+  &:hover {
+    animation: spin 4s ease-out 100ms 1 normal forwards;
+  }
+}
+
+// Bounce animation that will start with the top of the element initially at 0
+// and will bounce the element up 10 pixels while scaling the object to add some
+// noise to the bounce animation, as if it was a skipping motion
+@keyframes bounce {
+  0% {
+    transform: scale(1, 1);
+    top: 0;
+  }
+  10% {
+    top: 0;
+    transform: scale(0.9, 0.9);
+  }
+  35% {
+    top: -8;
+    transform: scale(1.1, 0.99);
+  }
+  50% {
+    top: -10px;
+    transform: scale(0.99, 1.1);
+  }
+  100% {
+    top: 0;
+    transform: scale(1, 1);
+  }
+}
+
+// animate bounce will use the ease-in timing function as if there were a build up
+// before the jump fires
+.animate-bounce {
+  animation: bounce 1s ease-in 800ms infinite normal forwards;
+}
+
+.animate-hover-bounce {
+  &:hover {
+    animation: bounce 1s ease-in 800ms infinite normal forwards;
+  }
+}
+
+// animation to fade right, like running away, will start off
+// with horizontal position at zero and add transform the elemnt to add noise
+@keyframes fade-right {
+  0% {
+    left: 0;
+    transform: scale(0, 0);
+  }
+  10% {
+    transform: scale(0.9, 0.9);
+  }
+  35% {
+    left: 10px;
+    transform: scale(1.1, 1.1);
+  }
+  50% {
+    opacity: 1;
+    left: 15px;
+    transform: scale(0.9, 0.9);
+  }
+  100% {
+    left: 100px;
+    opacity: 0;
+    transform: scale(0.9, 0.9);
+  }
+}
+
+.animate-fade-right {
+  animation: fade-right 1s ease-in 800ms infinite normal forwards;
+}
+
+.animate-hover-fade-right {
+  &:hover {
+    animation: fade-right 1s ease-in 800ms 1 normal forwards;
+  }
+}
+
+// animation for a "box-step" where the element will move down, then left
+// then up, then right returning to its original position moving in a box pattern
+@keyframes box-step {
+  0% {
+    top: 0;
+    left: 0;
+  }
+
+  25% {
+    top: 25px;
+    left: 0;
+  }
+
+  50% {
+    top: 25;
+    left: 25px;
+  }
+
+  75% {
+    top: 0;
+    left: 25px;
+  }
+
+  100% {
+    left: 0;
+  }
+}
+.animate-box-step {
+  animation: box-step 2s ease-in 800ms infinite normal forwards;
+}
+
+.animate-hover-box-step {
+  animation: box-step 2s ease-in 800ms 1 normal forwards;
+}

@@ -1,0 +1,11 @@
+// Run the below to compile SASS (inside /search)
+// sass [--watch] res/sass/main.scss:templates/search/css/index.css
+// This is where all the imports are done
+@charset "utf-8";
+@import "base/fonts";
+@import "base/animations";
+@import "abstract/variables";
+@import "abstract/extensions"; //import variables before extensions to use variables in bulma
+@import "abstract/mixins";
+@import "../../node_modules/bulma/bulma.sass"; // import bulma UI from the node modules
+@import "style";

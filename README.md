@@ -6,11 +6,17 @@
 
 - [x] Django Rest Framework
 - [x] Django
-- [ ] Npm
-- [ ] React
+- [x] Npm Packages: (npm i [cmd])
+- - react react-dom --save-dev
+- - webpack webpack-cli --save-dev
+- - @babel/core babel-loader @babel/preset-env @babel/preset-react --save-dev
+- - bulma
+- - @babel/plugin-proposal-class-properties
+- - react-router-dom
 
 ### Requirements:
 
+- [ ] create a plant_api app 
 - [ ] User can log in/ sign up
 - [ ] User can search plants from Trefle
 - [ ] User can save plants to their profile
@@ -18,10 +24,10 @@
 ### Tasks:
 
 - [ ] switch dev database to postgres sql
-- [ ] setup react to manage the front end
+- [x] setup react to manage the front end
 - [ ] set up route to preform search
 - [ ] set up enviroment variables
-- [ ] set up materialize-css or bulma ui for front end
+- [x] set up ~~materialize-css or~~ bulma ui for front end
 
 ### Scripts:
 

@@ -1,0 +1,9 @@
+// Mixins for the Django Plantr Search Application
+// mixin center will center all child elements of an element
+// as direction specified (row or column)
+@mixin center($direction) {
+    display: flex;
+    flex-direction: $direction;
+    justify-content: center;
+    align-items: center;
+}
