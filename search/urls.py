@@ -1,6 +1,6 @@
 from django.urls import path
-from .views import main
+from search.views import SavedPlantsView
 
 urlpatterns = [
-    path('', main)
+    path('saved', SavedPlantsView.as_view())
 ]

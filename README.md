@@ -1,6 +1,6 @@
 # PlantR Search App
 
-## Created with React and Django
+## FullStack Web App created with React and Django
 
 ### Packages Needed:
 
@@ -22,3 +22,12 @@
 - [ ] set up route to preform search
 - [ ] set up enviroment variables
 - [ ] set up materialize-css or bulma ui for front end
+
+### Scripts:
+
+- django-admin startproject name # create a new project, not needed
+- python manage.py startapp name # create a new app, may be needed
+- python manage.py runserver # to run
+- python manage.py makemigrations
+- python manage.py migrate # migrate new changes to the db, after making migrations
+- python manage.py createsuperuser # create a new super user
