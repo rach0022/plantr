@@ -1,1 +1,7 @@
+__pycache__/
+*.log
+*.pot
+*.pyc
+*.xlsx
 plantr/config.py
+*.DS_Store
