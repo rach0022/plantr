@@ -1,1 +1,2 @@
 *.css linguist-detectable=false
+/search/static/css/*.css linguist-detectable=false
