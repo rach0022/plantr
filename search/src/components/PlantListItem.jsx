@@ -17,6 +17,7 @@ export default function PlantListItem({
     const selector = (imageBackground) ? 'has-image' : null
     return (
         <div className={`card PlantListItem ${selector}`} key={id}>
+            {imageBackground}
             <div className="card-content">
                 <div className="title">{common_name}</div>
                 <div className="subtitle">{scientific_name}</div>

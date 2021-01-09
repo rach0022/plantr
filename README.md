@@ -7,16 +7,25 @@
 - [x] Django Rest Framework
 - [x] Django
 - [x] Npm Packages: (npm i [cmd])
-- - react react-dom --save-dev
-- - webpack webpack-cli --save-dev
-- - @babel/core babel-loader @babel/preset-env @babel/preset-react --save-dev
-- - bulma
-- - @babel/plugin-proposal-class-properties
-- - react-router-dom
+- react react-dom --save-dev
+- webpack webpack-cli --save-dev
+- @babel/core babel-loader @babel/preset-env @babel/preset-react --save-dev
+- bulma
+- @babel/plugin-proposal-class-properties
+- react-router-dom
+
+### Bugs:
+
+- [ ] BUG-01: ValueError at /search/save-plant/
+  > The QuerySet value for an exact lookup must be limited to one result using slicing.
+
+```python
+queryset = SavedPlants.objects.filter(plant_id=plant_id, user=user)[1]
+```
 
 ### Requirements:
 
-- [ ] create a plant_api app 
+- [ ] create a plant_api app
 - [ ] User can log in/ sign up
 - [ ] User can search plants from Trefle
 - [ ] User can save plants to their profile
